@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿#if UNITY_EDITOR
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+
 
 [CustomEditor(typeof(FloatingJoystick))]
 public class FloatingJoystickEditor : JoystickEditor
@@ -19,3 +21,4 @@ public class FloatingJoystickEditor : JoystickEditor
         }
     }
 }
+#endif
